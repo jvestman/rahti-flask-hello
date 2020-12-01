@@ -11,7 +11,7 @@ import flask
 STYLE = """
 body {
   # CHANGE background color from 'silver' to 'beige'
-  background-color: beige;
+  background-color: white;
   font-family: "Helvetica Neue",Helvetica,"Liberation Sans",Arial,sans-serif;
   font-size: 14px;
   padding: 10%;
@@ -31,7 +31,7 @@ PAGE = """
     <style>""" + STYLE + """</style>
   </head>
   <body>
-    <h1>This is the photo gallery from {{ student }}</h1>
+    <h1>This is the gallery from {{ student }}</h1>
     <ul>{% for kitten in kittens %}
       <li><img src='{{ kitten }}'/> {{ kitten }}</li>
     {% endfor %}</ul>
